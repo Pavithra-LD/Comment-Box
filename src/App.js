@@ -1,7 +1,7 @@
 
-import './App.css';
+
 import React,{useState} from 'react'
-import axios from '../../billing-app/node_modules/axios';
+import axios from 'axios'
 
 
 const myGif=['https://media0.giphy.com/media/xThuWcaa4U4XZQDgvm/200.gif?','https://media0.giphy.com/media/xThuWcaa4U4XZQDgvm/200_d.gif?','https://media2.giphy.com/media/zw6GmBnHQTzxe/200.gif?cid=09a79af1ti91qrjw0t0if5eolcq3rc0ujwdedhvxaqoqzhig&rid=200.gif&ct=g','https://media1.giphy.com/media/smekUnGXJ0kcdQHWeF/200.gif?cid=09a79af1ti91qrjw0t0if5eolcq3rc0ujwdedhvxaqoqzhig&rid=200.gif&ct=g']
@@ -68,7 +68,7 @@ function App() {
         <div className="col-md-6">
             <h2>All Comments</h2>
               {comments.length>0 && comments.map((ele,i)=>{
-                return <p key={i}>{ele.comment} <img src={ele.gif}/></p>
+                return <p key={i}>{ele.comment} <br/> <img src={ele.gif}/></p>
               })}
       </div>
 
